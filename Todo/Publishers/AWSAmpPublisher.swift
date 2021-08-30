@@ -13,7 +13,13 @@ import AWSAPIPlugin
 struct AWSAmpPublisher: AWSPublisher {
     
     /// A singleton instance of AWSAmpPublisher.
-    static let shared = AWSAmpPublisher()
+    static var shared: AWSPublisher = {
+        if CommandLine.arguments.contains("XCTestCase") {
+            return MockAWSPublisher()
+        } else {
+            return AWSAmpPublisher()
+        }
+    }()
 
     /// Setup Amplify plugins to operate with the GraphQL data store locally and remotely.
     private init() {

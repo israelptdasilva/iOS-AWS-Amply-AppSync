@@ -19,14 +19,16 @@
 		580B594326DD2D90000AB932 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 580B594226DD2D90000AB932 /* AWSDataStorePlugin */; };
 		580B594726DD2E66000AB932 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC31D26D9954B00639E23 /* TodoListViewModel.swift */; };
 		580B594826DD2E66000AB932 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30726D98AB400639E23 /* TodoListView.swift */; };
-		580B594926DD2E66000AB932 /* AWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B593B26DD1E8D000AB932 /* AWSPublisher.swift */; };
 		580B594A26DD2E66000AB932 /* AWSAmpPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC31B26D991C900639E23 /* AWSAmpPublisher.swift */; };
 		580B594B26DD2E66000AB932 /* TodoListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B592826DC0DC8000AB932 /* TodoListDetailView.swift */; };
 		580B594C26DD2E91000AB932 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91705BC3AF072A8F973DF /* Todo.swift */; };
 		580B594D26DD2E9F000AB932 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E70E03DA5170012A5633C6B /* Priority.swift */; };
 		580B594E26DD2E9F000AB932 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52562D55C92FE7EA69211E4A /* Todo+Schema.swift */; };
 		580B594F26DD2E9F000AB932 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C1016216F800136C416E /* AmplifyModels.swift */; };
-		580B595326DD3DB9000AB932 /* MockAWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */; };
+		580B595E26DD48C8000AB932 /* TodoListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B595D26DD48C8000AB932 /* TodoListViewUITests.swift */; };
+		580B596526DD4A43000AB932 /* MockAWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */; };
+		580B596726DD4A5C000AB932 /* MockAWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */; };
+		580B596A26DD4C5C000AB932 /* AWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B593B26DD1E8D000AB932 /* AWSPublisher.swift */; };
 		587CC30626D98AB400639E23 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30526D98AB400639E23 /* TodoApp.swift */; };
 		587CC30826D98AB400639E23 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30726D98AB400639E23 /* TodoListView.swift */; };
 		587CC30A26D98AB600639E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587CC30926D98AB600639E23 /* Assets.xcassets */; };
@@ -48,6 +50,13 @@
 			remoteGlobalIDString = 587CC30126D98AB400639E23;
 			remoteInfo = Todo;
 		};
+		580B596026DD48C8000AB932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 587CC2FA26D98AB400639E23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 587CC30126D98AB400639E23;
+			remoteInfo = Todo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +68,9 @@
 		580B593226DD18FC000AB932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		580B593B26DD1E8D000AB932 /* AWSPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPublisher.swift; sourceTree = "<group>"; };
 		580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAWSPublisher.swift; sourceTree = "<group>"; };
+		580B595B26DD48C8000AB932 /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B595D26DD48C8000AB932 /* TodoListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewUITests.swift; sourceTree = "<group>"; };
+		580B595F26DD48C8000AB932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587CC30226D98AB400639E23 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587CC30526D98AB400639E23 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		587CC30726D98AB400639E23 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -81,6 +93,13 @@
 				580B594326DD2D90000AB932 /* AWSDataStorePlugin in Frameworks */,
 				580B594126DD2D90000AB932 /* AWSAPIPlugin in Frameworks */,
 				580B593F26DD2D90000AB932 /* Amplify in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B595826DD48C8000AB932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +131,7 @@
 			children = (
 				587CC31B26D991C900639E23 /* AWSAmpPublisher.swift */,
 				580B593B26DD1E8D000AB932 /* AWSPublisher.swift */,
+				580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -127,10 +147,18 @@
 			isa = PBXGroup;
 			children = (
 				580B593026DD18FC000AB932 /* TodoListViewModelTests.swift */,
-				580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */,
 				580B593226DD18FC000AB932 /* Info.plist */,
 			);
 			path = TodoTests;
+			sourceTree = "<group>";
+		};
+		580B595C26DD48C8000AB932 /* TodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				580B595D26DD48C8000AB932 /* TodoListViewUITests.swift */,
+				580B595F26DD48C8000AB932 /* Info.plist */,
+			);
+			path = TodoUITests;
 			sourceTree = "<group>";
 		};
 		587CC2F926D98AB400639E23 = {
@@ -138,6 +166,7 @@
 			children = (
 				587CC30426D98AB400639E23 /* Todo */,
 				580B592F26DD18FC000AB932 /* TodoTests */,
+				580B595C26DD48C8000AB932 /* TodoUITests */,
 				587CC30326D98AB400639E23 /* Products */,
 				AA7B43683E79DB7EC2FCB61E /* AmplifyModels */,
 				F65476D26695C4A630EFBE30 /* AmplifyConfig */,
@@ -150,6 +179,7 @@
 			children = (
 				587CC30226D98AB400639E23 /* Todo.app */,
 				580B592E26DD18FC000AB932 /* TodoTests.xctest */,
+				580B595B26DD48C8000AB932 /* TodoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +251,24 @@
 			productReference = 580B592E26DD18FC000AB932 /* TodoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		580B595A26DD48C8000AB932 /* TodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B596226DD48C8000AB932 /* Build configuration list for PBXNativeTarget "TodoUITests" */;
+			buildPhases = (
+				580B595726DD48C8000AB932 /* Sources */,
+				580B595826DD48C8000AB932 /* Frameworks */,
+				580B595926DD48C8000AB932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580B596126DD48C8000AB932 /* PBXTargetDependency */,
+			);
+			name = TodoUITests;
+			productName = TodoUITests;
+			productReference = 580B595B26DD48C8000AB932 /* TodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		587CC30126D98AB400639E23 /* Todo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587CC31126D98AB600639E23 /* Build configuration list for PBXNativeTarget "Todo" */;
@@ -255,6 +303,10 @@
 					580B592D26DD18FC000AB932 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					580B595A26DD48C8000AB932 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 587CC30126D98AB400639E23;
+					};
 					587CC30126D98AB400639E23 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -278,12 +330,20 @@
 			targets = (
 				587CC30126D98AB400639E23 /* Todo */,
 				580B592D26DD18FC000AB932 /* TodoTests */,
+				580B595A26DD48C8000AB932 /* TodoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		580B592C26DD18FC000AB932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B595926DD48C8000AB932 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,6 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580B596A26DD4C5C000AB932 /* AWSPublisher.swift in Sources */,
+				580B596726DD4A5C000AB932 /* MockAWSPublisher.swift in Sources */,
 				580B594F26DD2E9F000AB932 /* AmplifyModels.swift in Sources */,
 				580B594C26DD2E91000AB932 /* Todo.swift in Sources */,
 				580B594A26DD2E66000AB932 /* AWSAmpPublisher.swift in Sources */,
@@ -316,9 +378,15 @@
 				580B594D26DD2E9F000AB932 /* Priority.swift in Sources */,
 				580B594726DD2E66000AB932 /* TodoListViewModel.swift in Sources */,
 				580B593126DD18FC000AB932 /* TodoListViewModelTests.swift in Sources */,
-				580B594926DD2E66000AB932 /* AWSPublisher.swift in Sources */,
-				580B595326DD3DB9000AB932 /* MockAWSPublisher.swift in Sources */,
 				580B594826DD2E66000AB932 /* TodoListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B595726DD48C8000AB932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B595E26DD48C8000AB932 /* TodoListViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +403,7 @@
 				DF5CC7A02F9782DD428F69D3 /* Priority.swift in Sources */,
 				580B592926DC0DC8000AB932 /* TodoListDetailView.swift in Sources */,
 				03FEB05F6C44CD26EAC8257B /* Todo+Schema.swift in Sources */,
+				580B596526DD4A43000AB932 /* MockAWSPublisher.swift in Sources */,
 				F84C96058A65383B3012D640 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +415,11 @@
 			isa = PBXTargetDependency;
 			target = 587CC30126D98AB400639E23 /* Todo */;
 			targetProxy = 580B593326DD18FC000AB932 /* PBXContainerItemProxy */;
+		};
+		580B596126DD48C8000AB932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 587CC30126D98AB400639E23 /* Todo */;
+			targetProxy = 580B596026DD48C8000AB932 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +457,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		580B596326DD48C8000AB932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2G8475H22;
+				INFOPLIST_FILE = TodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = israelptdasilva.TodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todo;
+			};
+			name = Debug;
+		};
+		580B596426DD48C8000AB932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2G8475H22;
+				INFOPLIST_FILE = TodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = israelptdasilva.TodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todo;
 			};
 			name = Release;
 		};
@@ -554,6 +666,15 @@
 			buildConfigurations = (
 				580B593526DD18FC000AB932 /* Debug */,
 				580B593626DD18FC000AB932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B596226DD48C8000AB932 /* Build configuration list for PBXNativeTarget "TodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B596326DD48C8000AB932 /* Debug */,
+				580B596426DD48C8000AB932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
