@@ -28,7 +28,8 @@ class TodoListDetailViewUITests: XCTestCase {
         app.textFields["Untitled"].doubleTap()
         app.menuItems["Paste"].tap()
         
-        app.buttons["Save"].doubleTap()
+        app.buttons["Save"].tap()
+        app.buttons["Save"].tap()
         XCTAssertTrue(app.cells["Hello World"].exists)
     }
     
