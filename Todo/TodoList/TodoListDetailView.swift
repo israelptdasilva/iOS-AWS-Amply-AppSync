@@ -131,7 +131,7 @@ fileprivate struct BarButtonView: View {
 fileprivate struct TodoListItemView_Previews: PreviewProvider {
     static var previews: some View {
         let todo = Todo(name: "Untitled", description: "My awesome description goes here")
-        let model = TodoListViewModel(publisher: .shared)
+        let model = TodoListViewModel(publisher: AWSAmpPublisher.shared)
         NavigationView {
             TodoListDetailView(todo: todo, model: model)
         }

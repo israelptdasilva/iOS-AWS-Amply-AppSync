@@ -6,14 +6,14 @@ import Amplify
 final class TodoListViewModel: ObservableObject {
     
     /// Interfaces with Amplify API.
-    let publisher: AWSAmpPublisher
+    let publisher: AWSPublisher
     
     /// A list of todos populated with data store items.
     @Published private(set) var todos: [Todo] = []
 
-    /// Initializes with a AWSAmpPublisher instance.
-    /// - Parameter publisher: An instance of AWSAmpPublisher to manage data store operations.
-    init(publisher: AWSAmpPublisher) {
+    /// Initializes with a AWSPublisher instance.
+    /// - Parameter publisher: An instance of AWSPublisher to manage data store operations.
+    init(publisher: AWSPublisher) {
         self.publisher = publisher
     }
         

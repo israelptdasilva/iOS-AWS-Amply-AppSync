@@ -15,7 +15,7 @@ struct TodoListView: View {
 
     /// Accepts and passes an instance of AWSAmpPublisher to the model controller.
     /// - Parameter publisher: A class that interfaces with Amplify API.
-    init(publisher: AWSAmpPublisher) {
+    init(publisher: AWSPublisher) {
         model = TodoListViewModel(publisher: publisher)
     }
     
@@ -61,7 +61,6 @@ fileprivate struct BarButtonView: View {
     var body: some View {
         Button(action: {
             model.save(model: Todo(name: name, description: description))
-            model.query()
         }) {
             Image(systemName: imageName)
                 .renderingMode(.original)

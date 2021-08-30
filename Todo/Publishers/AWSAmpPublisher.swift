@@ -10,7 +10,7 @@ import AWSAPIPlugin
 /// [Amplify API](https://docs.amplify.aws/start/getting-started/add-api/q/integration/ios/)
 /// [AppSync API](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)
 /// [Amplify API Mock](https://docs.amplify.aws/cli/usage/mock/)
-struct AWSAmpPublisher {
+struct AWSAmpPublisher: AWSPublisher {
     
     /// A singleton instance of AWSAmpPublisher.
     static let shared = AWSAmpPublisher()

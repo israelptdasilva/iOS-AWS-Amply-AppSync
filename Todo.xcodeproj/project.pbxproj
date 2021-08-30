@@ -12,6 +12,21 @@
 		580B591F26DBBF8A000AB932 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 580B591E26DBBF8A000AB932 /* AWSAPIPlugin */; };
 		580B592126DBBF8A000AB932 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 580B592026DBBF8A000AB932 /* AWSDataStorePlugin */; };
 		580B592926DC0DC8000AB932 /* TodoListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B592826DC0DC8000AB932 /* TodoListDetailView.swift */; };
+		580B593126DD18FC000AB932 /* TodoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B593026DD18FC000AB932 /* TodoListViewModelTests.swift */; };
+		580B593C26DD1E8D000AB932 /* AWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B593B26DD1E8D000AB932 /* AWSPublisher.swift */; };
+		580B593F26DD2D90000AB932 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 580B593E26DD2D90000AB932 /* Amplify */; };
+		580B594126DD2D90000AB932 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 580B594026DD2D90000AB932 /* AWSAPIPlugin */; };
+		580B594326DD2D90000AB932 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 580B594226DD2D90000AB932 /* AWSDataStorePlugin */; };
+		580B594726DD2E66000AB932 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC31D26D9954B00639E23 /* TodoListViewModel.swift */; };
+		580B594826DD2E66000AB932 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30726D98AB400639E23 /* TodoListView.swift */; };
+		580B594926DD2E66000AB932 /* AWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B593B26DD1E8D000AB932 /* AWSPublisher.swift */; };
+		580B594A26DD2E66000AB932 /* AWSAmpPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC31B26D991C900639E23 /* AWSAmpPublisher.swift */; };
+		580B594B26DD2E66000AB932 /* TodoListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B592826DC0DC8000AB932 /* TodoListDetailView.swift */; };
+		580B594C26DD2E91000AB932 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91705BC3AF072A8F973DF /* Todo.swift */; };
+		580B594D26DD2E9F000AB932 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E70E03DA5170012A5633C6B /* Priority.swift */; };
+		580B594E26DD2E9F000AB932 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52562D55C92FE7EA69211E4A /* Todo+Schema.swift */; };
+		580B594F26DD2E9F000AB932 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C1016216F800136C416E /* AmplifyModels.swift */; };
+		580B595326DD3DB9000AB932 /* MockAWSPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */; };
 		587CC30626D98AB400639E23 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30526D98AB400639E23 /* TodoApp.swift */; };
 		587CC30826D98AB400639E23 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CC30726D98AB400639E23 /* TodoListView.swift */; };
 		587CC30A26D98AB600639E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587CC30926D98AB600639E23 /* Assets.xcassets */; };
@@ -25,10 +40,25 @@
 		FF48C43AEAFB8C1BB7559FB2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B58E9C1D8B278510ED9EAEF /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		580B593326DD18FC000AB932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 587CC2FA26D98AB400639E23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 587CC30126D98AB400639E23;
+			remoteInfo = Todo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3A783B0590614EF7D39BA591 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		52562D55C92FE7EA69211E4A /* Todo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; };
 		580B592826DC0DC8000AB932 /* TodoListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListDetailView.swift; sourceTree = "<group>"; };
+		580B592E26DD18FC000AB932 /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B593026DD18FC000AB932 /* TodoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModelTests.swift; sourceTree = "<group>"; };
+		580B593226DD18FC000AB932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580B593B26DD1E8D000AB932 /* AWSPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPublisher.swift; sourceTree = "<group>"; };
+		580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAWSPublisher.swift; sourceTree = "<group>"; };
 		587CC30226D98AB400639E23 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587CC30526D98AB400639E23 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		587CC30726D98AB400639E23 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -44,6 +74,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		580B592B26DD18FC000AB932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B594326DD2D90000AB932 /* AWSDataStorePlugin in Frameworks */,
+				580B594126DD2D90000AB932 /* AWSAPIPlugin in Frameworks */,
+				580B593F26DD2D90000AB932 /* Amplify in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		587CC2FF26D98AB400639E23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				587CC31B26D991C900639E23 /* AWSAmpPublisher.swift */,
+				580B593B26DD1E8D000AB932 /* AWSPublisher.swift */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -82,10 +123,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		580B592F26DD18FC000AB932 /* TodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				580B593026DD18FC000AB932 /* TodoListViewModelTests.swift */,
+				580B595026DD3D5B000AB932 /* MockAWSPublisher.swift */,
+				580B593226DD18FC000AB932 /* Info.plist */,
+			);
+			path = TodoTests;
+			sourceTree = "<group>";
+		};
 		587CC2F926D98AB400639E23 = {
 			isa = PBXGroup;
 			children = (
 				587CC30426D98AB400639E23 /* Todo */,
+				580B592F26DD18FC000AB932 /* TodoTests */,
 				587CC30326D98AB400639E23 /* Products */,
 				AA7B43683E79DB7EC2FCB61E /* AmplifyModels */,
 				F65476D26695C4A630EFBE30 /* AmplifyConfig */,
@@ -97,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				587CC30226D98AB400639E23 /* Todo.app */,
+				580B592E26DD18FC000AB932 /* TodoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +198,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		580B592D26DD18FC000AB932 /* TodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B593726DD18FC000AB932 /* Build configuration list for PBXNativeTarget "TodoTests" */;
+			buildPhases = (
+				580B592A26DD18FC000AB932 /* Sources */,
+				580B592B26DD18FC000AB932 /* Frameworks */,
+				580B592C26DD18FC000AB932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580B593426DD18FC000AB932 /* PBXTargetDependency */,
+			);
+			name = TodoTests;
+			packageProductDependencies = (
+				580B593E26DD2D90000AB932 /* Amplify */,
+				580B594026DD2D90000AB932 /* AWSAPIPlugin */,
+				580B594226DD2D90000AB932 /* AWSDataStorePlugin */,
+			);
+			productName = TodoTests;
+			productReference = 580B592E26DD18FC000AB932 /* TodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		587CC30126D98AB400639E23 /* Todo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587CC31126D98AB600639E23 /* Build configuration list for PBXNativeTarget "Todo" */;
@@ -176,6 +252,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					580B592D26DD18FC000AB932 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					587CC30126D98AB400639E23 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -198,11 +277,19 @@
 			projectRoot = "";
 			targets = (
 				587CC30126D98AB400639E23 /* Todo */,
+				580B592D26DD18FC000AB932 /* TodoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		580B592C26DD18FC000AB932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		587CC30026D98AB400639E23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,12 +304,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		580B592A26DD18FC000AB932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B594F26DD2E9F000AB932 /* AmplifyModels.swift in Sources */,
+				580B594C26DD2E91000AB932 /* Todo.swift in Sources */,
+				580B594A26DD2E66000AB932 /* AWSAmpPublisher.swift in Sources */,
+				580B594E26DD2E9F000AB932 /* Todo+Schema.swift in Sources */,
+				580B594B26DD2E66000AB932 /* TodoListDetailView.swift in Sources */,
+				580B594D26DD2E9F000AB932 /* Priority.swift in Sources */,
+				580B594726DD2E66000AB932 /* TodoListViewModel.swift in Sources */,
+				580B593126DD18FC000AB932 /* TodoListViewModelTests.swift in Sources */,
+				580B594926DD2E66000AB932 /* AWSPublisher.swift in Sources */,
+				580B595326DD3DB9000AB932 /* MockAWSPublisher.swift in Sources */,
+				580B594826DD2E66000AB932 /* TodoListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		587CC2FE26D98AB400639E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				587CC31E26D9954B00639E23 /* TodoListViewModel.swift in Sources */,
 				587CC30826D98AB400639E23 /* TodoListView.swift in Sources */,
+				580B593C26DD1E8D000AB932 /* AWSPublisher.swift in Sources */,
 				587CC30626D98AB400639E23 /* TodoApp.swift in Sources */,
 				B01F2D3692084EA09BE76EEF /* AmplifyModels.swift in Sources */,
 				587CC31C26D991C900639E23 /* AWSAmpPublisher.swift in Sources */,
@@ -235,7 +341,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		580B593426DD18FC000AB932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 587CC30126D98AB400639E23 /* Todo */;
+			targetProxy = 580B593326DD18FC000AB932 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		580B593526DD18FC000AB932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2G8475H22;
+				INFOPLIST_FILE = TodoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = israelptdasilva.TodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		580B593626DD18FC000AB932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2G8475H22;
+				INFOPLIST_FILE = TodoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = israelptdasilva.TodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		587CC30F26D98AB600639E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +549,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		580B593726DD18FC000AB932 /* Build configuration list for PBXNativeTarget "TodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B593526DD18FC000AB932 /* Debug */,
+				580B593626DD18FC000AB932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		587CC2FD26D98AB400639E23 /* Build configuration list for PBXProject "Todo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -442,6 +601,21 @@
 			productName = AWSAPIPlugin;
 		};
 		580B592026DBBF8A000AB932 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 587CC31426D98BF600639E23 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		580B593E26DD2D90000AB932 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 587CC31426D98BF600639E23 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		580B594026DD2D90000AB932 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 587CC31426D98BF600639E23 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		580B594226DD2D90000AB932 /* AWSDataStorePlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 587CC31426D98BF600639E23 /* XCRemoteSwiftPackageReference "amplify-ios" */;
 			productName = AWSDataStorePlugin;
