@@ -28,8 +28,8 @@ class TodoListDetailViewUITests: XCTestCase {
         app.textFields["Untitled"].doubleTap()
         app.menuItems["Paste"].tap()
         
-        app.buttons["Save"].tap()
-        app.buttons["Save"].tap()
+        app.buttons["Save"].doubleTap()
+        wait(for: [], timeout: 2.0)
         XCTAssertTrue(app.cells["Hello World"].exists)
     }
     
@@ -43,6 +43,7 @@ class TodoListDetailViewUITests: XCTestCase {
         app.menuItems["Paste"].tap()
         
         app.buttons["Save"].doubleTap()
+        wait(for: [], timeout: 2.0)
         app.cells.firstMatch.tap()
         XCTAssertTrue(app.textFields["Hello World"].exists)
     }
@@ -62,7 +63,8 @@ class TodoListDetailViewUITests: XCTestCase {
     func testDeleteTodoRemovesTodoFromList() throws {
         app.buttons.firstMatch.tap()
         app.cells.firstMatch.tap()
-        app.buttons["trash"].tap()
+        app.buttons.element(boundBy: 1).tap()
+        wait(for: [], timeout: 2.0)
         XCTAssertTrue(app.cells.count == 0)
     }
     
