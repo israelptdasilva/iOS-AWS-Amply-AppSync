@@ -7,8 +7,9 @@ import AWSAPIPlugin
 /// AWSAmpPublisher is a wrapper to work with the AWS Amplify API.
 ///
 /// Amplify provides API calls to make GraphQL operations on a publisher/subscriber format.
-/// [Amplify API Reference](https://docs.amplify.aws/start/getting-started/add-api/q/integration/ios/)
-/// [AppSync API Reference](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)
+/// [Amplify API](https://docs.amplify.aws/start/getting-started/add-api/q/integration/ios/)
+/// [AppSync API](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)
+/// [Amplify API Mock](https://docs.amplify.aws/cli/usage/mock/)
 struct AWSAmpPublisher {
     
     /// A singleton instance of AWSAmpPublisher.
@@ -45,6 +46,7 @@ struct AWSAmpPublisher {
     func save<T: Model>(model: T, _ subscriber: Subscribers.Sink<T, DataStoreError>) {
         Amplify.DataStore.save(model)
             .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
             .receive(subscriber: subscriber)
     }
     

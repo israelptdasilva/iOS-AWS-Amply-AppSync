@@ -2,22 +2,22 @@ import Foundation
 import Combine
 import Amplify
 
-/// This view model uses AWSAmpPublisher to perform GraphQL operations locally and sync with the
-/// remote data store via AWS AppSync.
+/// Makes GraphQL operations and sync todo models with the remote data store.
 final class TodoListViewModel: ObservableObject {
     
-    /// The AWSAmpPublisher that provides basic operations on the data store.
-    private let publisher: AWSAmpPublisher
+    /// Interfaces with Amplify API.
+    let publisher: AWSAmpPublisher
     
-    /// The todo list that feeds the TodoListView.
+    /// A list of todos populated with data store items.
     @Published private(set) var todos: [Todo] = []
 
-    /// Initializes with a AWSAmpPublisher. Use this initializer to pass a MockAWSAmpPublisher during tests.
+    /// Initializes with a AWSAmpPublisher instance.
+    /// - Parameter publisher: An instance of AWSAmpPublisher to manage data store operations.
     init(publisher: AWSAmpPublisher) {
         self.publisher = publisher
     }
-    
-    /// Subscribes to mutation events - create, update and delete - on the Todo type.
+        
+    /// Subscribes to create, update and delete events.
     func subscribe() {
         publisher.subscribe(type: Todo.self, Subscribers.Sink<MutationEvent, DataStoreError> { _ in
         } receiveValue: { [weak self] todo in
@@ -25,12 +25,11 @@ final class TodoListViewModel: ObservableObject {
         })
     }
     
-    /// Creates a new Todo model in the data store.
-    func save(name: String, description: String) {
-        let model = Todo(name: name, description: description)
-        publisher.save(model: model, Subscribers.Sink<Todo, DataStoreError> { _ in
-        } receiveValue: { [weak self] todo in
-            self?.todos.append(model)
+    /// Save/update a  Todo model in the data store.
+    /// - Parameter model: The new todo model to save to the data store.
+    func save(model: Todo) {
+        publisher.save(model: model, Subscribers.Sink<Todo, DataStoreError> { comp in
+        } receiveValue: { _ in
         })
     }
     
@@ -43,6 +42,7 @@ final class TodoListViewModel: ObservableObject {
     }
     
     /// Deletes a Todo model from the data store.
+    /// - Parameter model: The todo model to delete from the data store.
     func delete(model: Todo) {
         publisher.delete(model: model)
         todos = todos.prefix { todo in
