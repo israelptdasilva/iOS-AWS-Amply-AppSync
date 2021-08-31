@@ -1,3 +1,5 @@
+[![Build Status](https://app.bitrise.io/app/709e892214e29a0b/status.svg?token=ED-l14v_4i6nwXj60rpYwg&branch=master)](https://app.bitrise.io/app/709e892214e29a0b)
+
 # Amplify & AppSync iOS Integration
 
 *© Israel Pereira Tavares da Silva*
