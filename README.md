@@ -14,6 +14,8 @@
 
 The primary goal of this project is to make an assessment of the use of AWS Amplify API for mobile development. In this assessment iOS is used, however Amplify is available for Android and Flutter technologies as well.
 
+You can see the sample app on [youtube](https://www.youtube.com/watch?v=m4C2jLuWJrg).
+
 ### Setup
 
 * **An account on AWS is required to create and managed services created by Amplify**
